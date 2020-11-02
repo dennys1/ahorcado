@@ -15,4 +15,8 @@ end
     click_button "Arriesgar"
   end
 
+  Then("muestra en pantalla {string}") do |mensaje|
+    expect(page).to have_css "div#mensaje", text: mensaje
+  end
+  
 
