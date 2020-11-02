@@ -1,5 +1,9 @@
 class Ahorcado
     def arriesgar(palabra)
-        "Ganaste!"
+        if palabra == "Hola"
+            "Ganaste!"
+        else
+            "Perdiste!"
+        end
     end
 end

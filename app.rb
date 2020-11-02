@@ -9,6 +9,6 @@ get '/' do
 end
 
 post '/' do
-    @mensaje = ahorcado.arriesgar "Hola"
+    @mensaje = ahorcado.arriesgar params['palabra']
     erb :index
 end
