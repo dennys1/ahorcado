@@ -13,3 +13,8 @@ Scenario: Un jugador arriesga y pierde
 Given Inicio la aplicación con un jugador
 When arriesga con palabra "Chau"
 Then muestra en pantalla "Perdiste!"
+
+Scenario: Juego carga y muestra pista
+Given Inicio la aplicación con un jugador
+When inicia el juego
+Then Muestra pista "Es un saludo"
