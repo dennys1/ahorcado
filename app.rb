@@ -5,6 +5,7 @@ require './lib/ahorcado'
 ahorcado=nil
 get '/' do
     ahorcado=Ahorcado.new
+    @pista = ahorcado.devolverPista
     erb :index
 end
 
