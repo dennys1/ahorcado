@@ -19,4 +19,11 @@ end
     expect(page).to have_css "div#mensaje", text: mensaje
   end
   
+  When("inicia el juego") do
+    visit '/'
+  end
+  
+  Then("Muestra pista {string}") do |pista|
+    expect(page).to have_css "div#pista", text: pista
+  end
 
